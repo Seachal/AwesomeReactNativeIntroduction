@@ -15,6 +15,9 @@ import com.nativelocalstorage.NativeLocalStoragePackage
 
 class MainApplication : Application(), ReactApplication {
 
+
+  // 最后，我们需要告诉 React Native 我们的主应用如何找到这个 Package。我们称这个过程为 "注册" 包。
+  //在这种情况下，你需要将其添加到 getPackages 方法中。
   override val reactNativeHost: ReactNativeHost =
       object : DefaultReactNativeHost(this) {
         override fun getPackages(): List<ReactPackage> =
