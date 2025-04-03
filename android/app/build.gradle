@@ -116,4 +116,7 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+    
+    // 添加OkHttp库依赖
+    implementation("com.squareup.okhttp3:okhttp:4.9.3")
 }
